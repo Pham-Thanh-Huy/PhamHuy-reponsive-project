@@ -1,0 +1,239 @@
+body{
+    font-size: 16px;
+    line-height: 1.15;
+}
+#wrapper{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.container{
+    max-width: 960px;
+    margin: 0px auto;
+}
+.d-flex{
+    display: flex;
+}
+/* =========================================================Header========================================== */
+#wp-header{
+    height: 60px;
+}
+/* ---background header----- */
+nav{
+    background-color: #555555;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#header{
+    justify-content: space-between;
+    position: relative;
+}
+
+/* ------header logo + description ----- */
+a.header__logo{
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 17px;
+}
+a.header__logo img{
+    max-width: 40px;
+    height: auto;
+}
+
+a.header__logo span{
+    color: #fff;
+}
+
+/* -----------------Header list menu ------------------ */
+ul.main__menu{
+    list-style: none;
+    padding: 10px 0px;
+    margin-bottom: 0px;
+    font-size: 16px;
+    display: none;
+   
+}
+ul.main__menu li{
+    position: relative;
+}
+ul.main__menu li a{
+    color: #c0c0c0;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    transition: all 0.25s ease-in-out;
+}
+ul.main__menu li a:hover{
+    color: #fff;
+}
+/* --------sub menu-------- */
+ul.main__menu ul.sub__menu{
+    list-style: none;
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    width: 220px;
+    background-color: #555555;
+    padding-left: 0;
+    padding: 15px 15px;
+    display: none;
+}
+ul.main__menu li:hover ul.sub__menu{
+    display: block;
+}
+
+/* -------------download button---------------- */
+.header--button__download{
+    display: none;
+    border: none;
+    background-color: #005ba4;
+    color: white !important;
+    font-weight: bold;
+    padding: 20px 30px;
+    box-sizing: border-box;
+}
+
+/* ------------------responsive---------------------------- */
+.fa-bars {
+    color: white;
+    position: absolute;
+    right: -26px;
+    padding: 20px 30px;
+}
+
+.main__menu__responsive {
+    position: absolute;
+    top: 100%;
+    padding-left: 0px;
+    list-style: none;
+    background-color: #555555;
+    width: 100%;
+    padding-bottom: 15px;
+    font-size: 16px;
+    
+}
+
+.main__menu__responsive li a {
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #c0c0c0;
+    display: block;
+}
+
+.main__menu__responsive li a:hover {
+    color: white;
+    transition: all 0.25s ease-in-out;
+}
+
+/* ----------------submenu responsive---------------- */
+.main__menu__responsive .sub__menu{
+    background: grey;
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+}
+.main__menu__responsive  li{
+    position: relative;
+}
+
+.fa-chevron-up{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: white;
+}
+.fa-chevron-down{
+    position: absolute;
+    top: 15px;
+    right: 0;
+    color: white;
+    visibility: hidden;
+}
+
+/* =================================================content============================================= */
+#content {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+#content h1 {
+    font-size: 22px;
+    margin: 10px;
+}
+
+#content p {
+    font-size: 12px;
+    margin: 10px;
+}
+
+/* ======================================Responsive mobile first====================================== */
+@media (min-width: 576px) {
+    #content h1 {
+        font-size: 28px;
+    }
+
+    #content p {
+        font-size: 13px;
+    }
+
+    #header h1 {
+        font-size: 22px;
+    }
+
+ 
+}
+
+@media (min-width: 768px) {
+    #content h1 {
+        font-size: 32px;
+    }
+
+    #content p {
+        font-size: 14px;
+    }
+
+    .fa-bars {
+        display: none !important;
+    }
+
+    .header--button__download {
+        display: block;
+    }
+
+
+    .main__menu__responsive {
+        display: none;
+    }
+     ul.main__menu{
+        display: flex;
+     }
+}
+
+
+@media (min-width: 992px) {
+    #content h1 {
+        font-size: 36px;
+    }
+
+    #content p {
+        font-size: 15px;
+    }
+
+    a.header__logo{
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+    #content h1 {
+        font-size: 40px;
+    }
+
+    #content p {
+        font-size: 16px;
+    }
+
+    
+}
